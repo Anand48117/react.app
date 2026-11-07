@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import DoctorCard from './DoctorCard'
 import AddDoctor from './AddDoctor'
+import Patients from './Patients'
 import Home from './Home'
 import "./Home.css"
 import { Routes,Route } from 'react-router-dom'
@@ -14,6 +15,7 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/add-doctor' element={<AddDoctor/>}/>
+        <Route path='/patients' element={<Patients/>}/>
 
       </Routes>
 
